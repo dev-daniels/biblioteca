@@ -26,6 +26,7 @@ object frmPrincipal: TfrmPrincipal
       end
       object LivroExemplar1: TMenuItem
         Caption = 'Livro \ Exemplar'
+        OnClick = LivroExemplar1Click
       end
     end
     object Controle1: TMenuItem

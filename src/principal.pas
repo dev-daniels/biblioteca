@@ -20,6 +20,7 @@ type
     Relatrios1: TMenuItem;
     N1: TMenuItem;
     procedure Leitor1Click(Sender: TObject);
+    procedure LivroExemplar1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -32,13 +33,18 @@ var
 
 implementation
 
-uses cadastro_leitor;
+uses cadastro_leitor, cadastro_livro;
 
 {$R *.dfm}
 
 procedure TfrmPrincipal.Leitor1Click(Sender: TObject);
 begin
   frmCadastroLeitor.ShowModal();
+end;
+
+procedure TfrmPrincipal.LivroExemplar1Click(Sender: TObject);
+begin
+  frmCadastroLivro.ShowModal();
 end;
 
 end.
